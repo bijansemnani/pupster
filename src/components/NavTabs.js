@@ -10,6 +10,16 @@ const NavTabs = () => (
           window.location.pathname === "/" ? "nav-link active" : "nav-link"
         }
       >
+        Pupster
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link
+        to="/"
+        className={
+          window.location.pathname === "/" ? "nav-link active" : "nav-link"
+        }
+      >
         About
       </Link>
     </li>
