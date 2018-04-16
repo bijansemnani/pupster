@@ -4,8 +4,8 @@ import NavTabs from "./components/NavTabs";
 import Home from "./components/pages/Home";
 import Discover from "./components/pages/Discover";
 import Search from "./components/pages/Search";
-class App extends React.Component {
 
+class App extends React.Component {
 
   render () {
     return (
