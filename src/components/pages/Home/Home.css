@@ -1,0 +1,15 @@
+.dog-picture {
+    background-image: url("./dogs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 576px;
+    background-color: black;
+}
+
+.welcome-title {
+    margin-top: 30px;
+}
+
+.paragraphs {
+    margin: 0 auto;
+}
