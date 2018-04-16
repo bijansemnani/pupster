@@ -8,4 +8,8 @@ export default {
     const randImage = "breeds/image/random";
     return axios.get(BASEURL + randImage);
   }
-};
+}
+
+
+
+
