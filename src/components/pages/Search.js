@@ -1,11 +1,31 @@
-import React from "react";
+import React from 'react';
 
-const Search = () => (
-  <div>
-    <h1>Search by Breed!</h1>
-    
-    
-  </div>
-);
+class SearchBar extends React.Component {
 
-export default Search;
+    constructor() {
+        super();
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange() {
+        this.props.onUserInput(
+            this.refs['filterTextInput'].value
+        );
+    }
+
+    render() {
+        return (
+            <form>
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    value={this.props.filterText}
+                    ref="filterTextInput"
+                    onChange={this.handleChange}
+                />
+            </form>
+        );
+    }
+}
+
+export default SearchBar;

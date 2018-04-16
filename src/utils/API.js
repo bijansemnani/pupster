@@ -7,9 +7,9 @@ export default {
   searchImage: function() {
     const randImage = "breeds/image/random";
     return axios.get(BASEURL + randImage);
+  }, 
+  search: function(query) {
+    let breedSearch = `breed/${query}/images`;
+    return axios.get(BASEURL + breedSearch);
   }
 }
-
-
-
-
